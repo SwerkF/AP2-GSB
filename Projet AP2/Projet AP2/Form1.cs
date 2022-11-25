@@ -32,11 +32,8 @@ namespace Projet_AP2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Set to no text.
             tb_mdp.Text = "";
-            // The password character is an asterisk.
             tb_mdp.PasswordChar = '*';
-            // The control will allow no more than 14 characters.
             tb_mdp.MaxLength = 14;
         }
     }
