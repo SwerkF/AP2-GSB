@@ -7,22 +7,12 @@ namespace Projet_AP2
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_connecter_Click(object sender, EventArgs e)
         {
-            if(tb_user.Text == "Administrateur" && tb_mdp.Text == "Admin123")
+            if(tb_user.Text == "a" && tb_mdp.Text == "a")
             {
                 new Form2().Show();
-                new Form1().Close();
+                this.Hide();
             }
             else
             {
@@ -32,6 +22,11 @@ namespace Projet_AP2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Connexion à la base de données
+            Globale.cnx = new System.Data.SqlClient.SqlConnection();
+            Globale.cnx.ConnectionString = "Data Source=BTS2021-17\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+            Globale.cnx.Open();
+
             tb_mdp.Text = "";
             tb_mdp.PasswordChar = '*';
             tb_mdp.MaxLength = 14;

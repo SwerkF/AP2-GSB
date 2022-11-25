@@ -41,7 +41,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::Projet_AP2.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(371, 69);
@@ -50,11 +50,10 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox2.Location = new System.Drawing.Point(167, 69);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(564, 402);
@@ -64,7 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(209, 228);
             this.label1.Name = "label1";
@@ -75,7 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.label2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(209, 301);
             this.label2.Name = "label2";
@@ -85,7 +84,7 @@
             // 
             // btn_connecter
             // 
-            this.btn_connecter.BackColor = System.Drawing.Color.LightBlue;
+            this.btn_connecter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_connecter.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_connecter.Location = new System.Drawing.Point(371, 389);
             this.btn_connecter.Name = "btn_connecter";

@@ -21,5 +21,24 @@ namespace Projet_AP2
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void décisionPassageÉtapeSuivanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 child = new Form3();
+            child.MdiParent = this;
+            child.Show();
+        }
+
+        private void ajoutNouveauMédicamentToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form4 child = new Form4();
+            child.MdiParent = this;
+            child.Show();
+        }
     }
 }
