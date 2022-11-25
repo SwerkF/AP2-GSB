@@ -1,0 +1,19 @@
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\Projet AP2.exe
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\Projet AP2.deps.json
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\Projet AP2.runtimeconfig.json
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\Projet AP2.dll
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\Projet AP2.pdb
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.csproj.AssemblyReference.cache
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet_AP2.Form1.resources
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.csproj.GenerateResource.cache
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.GeneratedMSBuildEditorConfig.editorconfig
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.AssemblyInfoInputs.cache
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.AssemblyInfo.cs
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.csproj.CoreCompileInputs.cache
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.dll
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\refint\Projet AP2.dll
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.pdb
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet AP2.genruntimeconfig.cache
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\ref\Projet AP2.dll
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet_AP2.Properties.Resources.resources
+C:\wamp64\www\AP2 - GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet_AP2.Form2.resources
