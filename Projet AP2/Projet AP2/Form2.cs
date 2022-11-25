@@ -16,5 +16,10 @@ namespace Projet_AP2
         {
             InitializeComponent();
         }
+
+        private void consultationWorkflowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
