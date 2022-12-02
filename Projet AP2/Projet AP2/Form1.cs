@@ -5,6 +5,12 @@ namespace Projet_AP2
         public Form1()
         {
             InitializeComponent();
+            Globale.cnx = new System.Data.SqlClient.SqlConnection();
+            Globale.cnx.ConnectionString = "Data Source=DESKTOP-3COT5C9\\SQLTEST;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+            Globale.cnx.Open();
+
+            Globale.lesFamilles = new Dictionary<string, Famille>();
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -19,7 +25,7 @@ namespace Projet_AP2
 
         private void btn_connecter_Click(object sender, EventArgs e)
         {
-            if(tb_user.Text == "Administrateur" && tb_mdp.Text == "Admin123")
+            if(tb_user.Text == "a" && tb_mdp.Text == "a")
             {
                 new Form2().Show();
                 new Form1().Close();

@@ -21,5 +21,14 @@ namespace Projet_AP2
         {
 
         }
+
+        private void décisionPassageÉtapeSuivanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form = new Form3();
+            form.Show();
+            this.Hide();
+
+
+        }
     }
 }
