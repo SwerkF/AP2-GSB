@@ -5,6 +5,11 @@ namespace Projet_AP2
         public Form1()
         {
             InitializeComponent();
+
+            //Connexion à la base de données
+            Globale.cnx = new System.Data.SqlClient.SqlConnection();
+            Globale.cnx.ConnectionString = "Data Source=BTS2021-17\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+            Globale.cnx.Open();
         }
 
         private void btn_connecter_Click(object sender, EventArgs e)
@@ -22,11 +27,6 @@ namespace Projet_AP2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Connexion à la base de données
-            Globale.cnx = new System.Data.SqlClient.SqlConnection();
-            Globale.cnx.ConnectionString = "Data Source=BTS2021-17\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
-            Globale.cnx.Open();
-
             tb_mdp.Text = "";
             tb_mdp.PasswordChar = '*';
             tb_mdp.MaxLength = 14;

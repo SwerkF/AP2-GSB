@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,12 +20,47 @@ namespace Projet_AP2
 
         private void Form4_Load(object sender, EventArgs e)
         {
-
+            db.listeClient();
         }
 
         private void btn_ajouter_Click(object sender, EventArgs e)
         {
-            
+            if (tb_cdefamille.Text != "" && tb_composition.Text != "" && tb_contreIndi.Text != "" && tb_dp.Text != "" && tb_effets.Text != "" && tb_nom.Text != "")
+            {
+                if (Globale.LesMedicaments.ContainsKey(tb_dp.Text))
+                {
+                    MessageBox.Show("Ce dépot légale est déjà attribué à un autre medicament", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    string dpt = tb_dp.Text.Trim();
+                    if (db.getInsertMed(dpt, tb_nom.Text, tb_cdefamille.Text, tb_composition.Text, tb_effets.Text, tb_contreIndi.Text, Convert.ToSingle(nud_prix.Value)))
+                    {
+                        MessageBox.Show("Le médicament a bien été ajouté");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ajout impossible");
+                    }
+                }
+                /* try
+                {
+                    string dpt = tb_dp.Text;
+                    if (db.getInsertMed(dpt, tb_nom.Text, tb_cdefamille.Text, tb_composition.Text, tb_effets.Text, tb_contreIndi.Text, Convert.ToSingle(nud_prix.Value)))
+                    {
+                        MessageBox.Show("Le médicament a bien été ajouté");
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Erreur, le dépôt légal doit être un entier");
+                }*/
+
+            }
+            else
+            {
+                MessageBox.Show("Erreur, il faut renseigner tous les champs");
+            }
         }
 
         private void tb_dp_TextChanged(object sender, EventArgs e)

@@ -121,6 +121,7 @@
             this.consultationNombreMédicamentParFamilleToolStripMenuItem.Name = "consultationNombreMédicamentParFamilleToolStripMenuItem";
             this.consultationNombreMédicamentParFamilleToolStripMenuItem.Size = new System.Drawing.Size(331, 22);
             this.consultationNombreMédicamentParFamilleToolStripMenuItem.Text = "Consultation nombre médicament par famille";
+            this.consultationNombreMédicamentParFamilleToolStripMenuItem.Click += new System.EventHandler(this.consultationNombreMédicamentParFamilleToolStripMenuItem_Click);
             // 
             // consultationMédicamentEnCoursDeToolStripMenuItem
             // 
