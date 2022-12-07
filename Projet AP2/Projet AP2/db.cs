@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace Projet_AP2
 {
@@ -68,12 +69,63 @@ namespace Projet_AP2
                 string compo = SqlExec["MED_COMPOSITION"].ToString();
                 string effets = SqlExec["MED_EFFETS"].ToString();
                 string contreIndi = SqlExec["MED_CONTREINDIC"].ToString();
-           //     float prix = Convert.ToSingle(SqlExec["MED_PRIXECHANTILLON"].ToString());
+                float prix = Convert.ToSingle(SqlExec["MED_PRIXECHANTILLON"].ToString());
 
                 Medicament leMedicament = new Medicament(dpt, nom, fam, compo, effets, contreIndi, 0);
 
                 Globale.LesMedicaments.Add(dpt, leMedicament);
             }
         }
+        public static void listeFamille()
+        {
+            Globale.lesFamilles.Clear();
+
+            //objet SQLCommand pour définir la procédure stockée à utiliser
+            SqlCommand maRequete = new SqlCommand("prc_liste_fam", Globale.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // exécuter la procedure stockée dans un curseur 
+            SqlDataReader SqlExec = maRequete.ExecuteReader();
+
+            //boucle de lecture des familles avec ajout dans la collection
+            while (SqlExec.Read())
+            {
+                string codeFam = SqlExec["FAM_CODE"].ToString();
+                string libelle = SqlExec["FAM_LIBELLE"].ToString();
+                int nbMed = int.Parse(SqlExec["nbMed"].ToString());
+
+                Famille laFamille = new Famille(codeFam, libelle, nbMed);
+
+                Globale.lesFamilles.Add(codeFam, laFamille);
+            }
         }
+
+        public static void listeMedicament()
+        {
+            Globale.LesMedicaments.Clear();
+
+            //objet SQLCommand pour définir la procédure stockée à utiliser
+            SqlCommand maRequete = new SqlCommand("prc_liste_medicamentNonAutorise", Globale.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // exécuter la procedure stockée dans un curseur 
+            SqlDataReader SqlExec = maRequete.ExecuteReader();
+
+            //boucle de lecture des familles avec ajout dans la collection
+            while (SqlExec.Read())
+            {
+                string dpt = SqlExec["MED_DEPOTLEGAL"].ToString();
+                string nom = SqlExec["MED_NOMCOMMERCIAL"].ToString();
+                string code_fam = SqlExec["FAM_CODE"].ToString();
+                string compo = SqlExec["MED_COMPOSITION"].ToString();
+                string effet = SqlExec["MED_EFFETS"].ToString();
+                string contreIndi = SqlExec["MED_CONTREINDIC"].ToString();
+                float prix = 0;
+
+                Medicament leMedicament = new Medicament(dpt, nom, code_fam, compo, effet, contreIndi, prix);
+
+                Globale.LesMedicaments.Add(dpt, leMedicament);
+            }
+        }
+    }
 }

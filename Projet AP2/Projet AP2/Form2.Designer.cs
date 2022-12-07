@@ -128,6 +128,7 @@
             this.consultationMédicamentEnCoursDeToolStripMenuItem.Name = "consultationMédicamentEnCoursDeToolStripMenuItem";
             this.consultationMédicamentEnCoursDeToolStripMenuItem.Size = new System.Drawing.Size(331, 22);
             this.consultationMédicamentEnCoursDeToolStripMenuItem.Text = "Consultation médicament en cours de validation";
+            this.consultationMédicamentEnCoursDeToolStripMenuItem.Click += new System.EventHandler(this.consultationMédicamentEnCoursDeToolStripMenuItem_Click);
             // 
             // Form2
             // 

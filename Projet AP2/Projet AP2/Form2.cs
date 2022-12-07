@@ -47,5 +47,12 @@ namespace Projet_AP2
             child.MdiParent = this;
             child.Show();
         }
+
+        private void consultationMédicamentEnCoursDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 child = new Form6();
+            child.MdiParent = this;
+            child.Show();
+        }
     }
 }

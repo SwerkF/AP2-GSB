@@ -10,7 +10,7 @@ namespace Projet_AP2
     internal class Globale
     {
         public static SqlConnection cnx;
-        public static Dictionary<string, Famille> lesFamilles;   //Liste des familles
+        public static Dictionary<string, Famille> lesFamilles = new Dictionary<string, Famille>();   //Liste des familles
         public static Dictionary<string, Medicament> LesMedicaments = new Dictionary<string, Medicament>();      //Liste des médicaments
     }
 }
