@@ -7,7 +7,7 @@
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form3.cs">
+    <Compile Update="consultation_workflow.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
