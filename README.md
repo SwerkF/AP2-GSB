@@ -35,6 +35,14 @@ Le travail devait être rendu au plus tard le 14 Décembre 2022.
 - Page de consultation des médicaments en cours de validation
 - Rédaction d'une notice techniques (triggers / procédures stockées)
 - Rédaction notice d'installation du projet
+
+## Guide d'installation ⚙️
+
+Lien explication de l'installation : [Visual Studio 2022](https://learn.microsoft.com/fr-fr/visualstudio/install/install-visual-studio?view=vs-2022)
+
+Lien explication de l'installation : [SQLServer](https://www.visual-expert.com/FR/visual-expert-documentation/install-and-configure-visual-expert/sql-server-2019-installation-guide.html)
+
+
 ## Auteurs 📝
 
 - [@Swerk](https://www.github.com/SwerF) Oliwer SKWERES
