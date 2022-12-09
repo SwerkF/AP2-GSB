@@ -55,7 +55,6 @@ namespace Projet_AP2
                         lvM.SubItems.Add(leMedicament.getComposition());
                         lvM.SubItems.Add(leMedicament.getEffets());
                         lvM.SubItems.Add(leMedicament.getContreIndication());
-                        lvM.SubItems.Add(leMedicament.getPrix().ToString());
                         lv_medicaments.Items.Add(lvM);
                     }
 

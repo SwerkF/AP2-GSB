@@ -41,7 +41,6 @@
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -105,8 +104,7 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7});
+            this.columnHeader6});
             this.lv_medicaments.Location = new System.Drawing.Point(15, 34);
             this.lv_medicaments.Name = "lv_medicaments";
             this.lv_medicaments.Size = new System.Drawing.Size(654, 356);
@@ -143,10 +141,6 @@
             this.columnHeader6.Text = "Contre Indi";
             this.columnHeader6.Width = 150;
             // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Prix";
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -179,6 +173,5 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
-        private ColumnHeader columnHeader7;
     }
 }

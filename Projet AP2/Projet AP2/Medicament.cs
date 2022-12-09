@@ -15,9 +15,8 @@ namespace Projet_AP2
         private string composition;
         private string effets;
         private string contreIndication;
-        private float prix;
 
-        public Medicament(string depot, string nom, string famille, string composition, string effets, string contreIndication, float prix)
+        public Medicament(string depot, string nom, string famille, string composition, string effets, string contreIndication)
         {
             this.depot = depot;
             this.nom = nom;
@@ -25,7 +24,6 @@ namespace Projet_AP2
             this.composition = composition;
             this.effets = effets;
             this.contreIndication = contreIndication;
-            this.prix = prix;
         }
 
         public string getDepot()
@@ -51,10 +49,6 @@ namespace Projet_AP2
         public string getContreIndication()
         {
             return this.contreIndication;
-        }
-        public float getPrix()
-        {
-            return this.prix;
         }
     }
 }

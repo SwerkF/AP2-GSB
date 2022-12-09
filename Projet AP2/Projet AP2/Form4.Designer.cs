@@ -41,13 +41,10 @@
             this.tb_effets = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_contreIndi = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.nud_prix = new System.Windows.Forms.NumericUpDown();
             this.btn_ajouter = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.groupBo = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_prix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBo.SuspendLayout();
             this.SuspendLayout();
@@ -160,29 +157,12 @@
             this.tb_contreIndi.TabIndex = 10;
             this.tb_contreIndi.TextChanged += new System.EventHandler(this.tb_contreIndi_TextChanged);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(21, 268);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 15);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Prix échantillon :";
-            // 
-            // nud_prix
-            // 
-            this.nud_prix.Location = new System.Drawing.Point(122, 264);
-            this.nud_prix.Name = "nud_prix";
-            this.nud_prix.Size = new System.Drawing.Size(120, 23);
-            this.nud_prix.TabIndex = 14;
-            // 
             // btn_ajouter
             // 
             this.btn_ajouter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_ajouter.Enabled = false;
             this.btn_ajouter.ForeColor = System.Drawing.Color.Black;
-            this.btn_ajouter.Location = new System.Drawing.Point(430, 287);
+            this.btn_ajouter.Location = new System.Drawing.Point(294, 272);
             this.btn_ajouter.Name = "btn_ajouter";
             this.btn_ajouter.Size = new System.Drawing.Size(137, 43);
             this.btn_ajouter.TabIndex = 15;
@@ -203,8 +183,6 @@
             // 
             this.groupBo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.groupBo.Controls.Add(this.btn_ajouter);
-            this.groupBo.Controls.Add(this.nud_prix);
-            this.groupBo.Controls.Add(this.label7);
             this.groupBo.Controls.Add(this.label6);
             this.groupBo.Controls.Add(this.tb_contreIndi);
             this.groupBo.Controls.Add(this.label5);
@@ -234,7 +212,6 @@
             this.Name = "Form4";
             this.Text = "GSB - Ajout d\'un nouveau médicament";
             this.Load += new System.EventHandler(this.Form4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.nud_prix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBo.ResumeLayout(false);
             this.groupBo.PerformLayout();
@@ -256,8 +233,6 @@
         private TextBox tb_effets;
         private Label label6;
         private TextBox tb_contreIndi;
-        private Label label7;
-        private NumericUpDown nud_prix;
         private Button btn_ajouter;
         private PictureBox pictureBox1;
         private HelpProvider helpProvider1;

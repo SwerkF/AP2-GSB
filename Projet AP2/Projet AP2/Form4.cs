@@ -34,7 +34,7 @@ namespace Projet_AP2
                 else
                 {
                     string dpt = tb_dp.Text.Trim();
-                    if (db.getInsertMed(dpt, tb_nom.Text, tb_cdefamille.Text, tb_composition.Text, tb_effets.Text, tb_contreIndi.Text, Convert.ToSingle(nud_prix.Value)))
+                    if (db.getInsertMed(dpt, tb_nom.Text, tb_cdefamille.Text, tb_composition.Text, tb_effets.Text, tb_contreIndi.Text))
                     {
                         MessageBox.Show("Le médicament a bien été ajouté");
                     }

@@ -10,34 +10,31 @@ namespace Projet_AP2
 {
     public static class db
     {
-        public static Boolean getInsertMed(string dpt, string nom, string fam, string compo, string effets, string contreIndi, float prix)
+        public static Boolean getInsertMed(string dpt, string nom, string fam, string compo, string effets, string contreIndi)
         {
             SqlCommand maRequete = new SqlCommand("prc_getInsertMed", Globale.cnx);
             // Il s’agit d’une procédure stockée:
             maRequete.CommandType = System.Data.CommandType.StoredProcedure;
 
             // Ajouter les parameters à la procédure stockée
-            SqlParameter paramDpt = new SqlParameter("@MED_DEPOTLEGAL", System.Data.SqlDbType.NVarChar, 50);
+            SqlParameter paramDpt = new SqlParameter("@dpt", System.Data.SqlDbType.NVarChar, 50);
             paramDpt.Value = dpt;
-            SqlParameter paramNomMed = new SqlParameter("@MED_NOMCOMMERCIAL", System.Data.SqlDbType.NVarChar, 50);
+            SqlParameter paramNomMed = new SqlParameter("@nomMed", System.Data.SqlDbType.NVarChar, 50);
             paramNomMed.Value = nom;
-            SqlParameter paramFam = new SqlParameter("@FAM_CODE", System.Data.SqlDbType.NVarChar, 50);
+            SqlParameter paramFam = new SqlParameter("@fam", System.Data.SqlDbType.NVarChar, 50);
             paramFam.Value = fam;
-            SqlParameter paramCompo = new SqlParameter("@MED_COMPOSITION", System.Data.SqlDbType.NVarChar, 50);
+            SqlParameter paramCompo = new SqlParameter("@compo", System.Data.SqlDbType.NVarChar, 50);
             paramCompo.Value = compo;
-            SqlParameter paramEffets = new SqlParameter("@MED_EFFETS", System.Data.SqlDbType.NVarChar, 50);
+            SqlParameter paramEffets = new SqlParameter("@effets", System.Data.SqlDbType.NVarChar, 50);
             paramEffets.Value = effets;
-            SqlParameter paramContreIndi = new SqlParameter("@MED_CONTREINDIC", System.Data.SqlDbType.NVarChar, 50);
+            SqlParameter paramContreIndi = new SqlParameter("@contreIndi", System.Data.SqlDbType.NVarChar, 50);
             paramContreIndi.Value = contreIndi;
-            SqlParameter paramPrix = new SqlParameter("@MED_PRIXECHANTILLON", System.Data.SqlDbType.Float);
-            paramPrix.Value = prix;
             maRequete.Parameters.Add(paramDpt);
             maRequete.Parameters.Add(paramNomMed);
             maRequete.Parameters.Add(paramFam);
             maRequete.Parameters.Add(paramCompo);
             maRequete.Parameters.Add(paramEffets);
             maRequete.Parameters.Add(paramContreIndi);
-            maRequete.Parameters.Add(paramPrix);
 
             // exécuter la procedure stockée
             try
@@ -69,9 +66,8 @@ namespace Projet_AP2
                 string compo = SqlExec["MED_COMPOSITION"].ToString();
                 string effets = SqlExec["MED_EFFETS"].ToString();
                 string contreIndi = SqlExec["MED_CONTREINDIC"].ToString();
-                float prix = 0;
 
-                Medicament leMedicament = new Medicament(dpt, nom, fam, compo, effets, contreIndi, 0);
+                Medicament leMedicament = new Medicament(dpt, nom, fam, compo, effets, contreIndi);
 
                 Globale.LesMedicaments.Add(dpt, leMedicament);
             }
@@ -120,9 +116,8 @@ namespace Projet_AP2
                 string compo = SqlExec["MED_COMPOSITION"].ToString();
                 string effet = SqlExec["MED_EFFETS"].ToString();
                 string contreIndi = SqlExec["MED_CONTREINDIC"].ToString();
-                float prix = 0;
 
-                Medicament leMedicament = new Medicament(dpt, nom, code_fam, compo, effet, contreIndi, prix);
+                Medicament leMedicament = new Medicament(dpt, nom, code_fam, compo, effet, contreIndi);
 
                 Globale.LesMedicaments.Add(dpt, leMedicament);
             }
