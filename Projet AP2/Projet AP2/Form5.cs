@@ -21,7 +21,9 @@ namespace Projet_AP2
         private void Form5_Load(object sender, EventArgs e)
         {
             db.listeFamille();
-            foreach(string key in Globale.lesFamilles.Keys)
+            db.listeMedicament();
+
+            foreach (string key in Globale.lesFamilles.Keys)
             {
                 Famille laFamille = Globale.lesFamilles[key];
                 ListViewItem maLigne = new ListViewItem();
@@ -29,6 +31,35 @@ namespace Projet_AP2
                 maLigne.SubItems.Add(laFamille.getLibelle());
                 maLigne.SubItems.Add(laFamille.getNbMed().ToString());
                 lv_famille.Items.Add(maLigne);
+            }
+        }
+
+        private void lv_famille_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lv_medicaments.Items.Clear();
+            ListView lv = (ListView)sender;
+            if (lv.SelectedItems.Count > 0)
+            {
+                string fam = lv.SelectedItems[0].Text;
+                Medicament leMedicament = null;
+                foreach (string key in Globale.LesMedicaments.Keys)
+                {
+                    Medicament unMedicament = Globale.LesMedicaments[key];
+                    if (unMedicament.getFamille() == fam)
+                    {
+                        leMedicament = unMedicament;
+                        ListViewItem lvM = new ListViewItem();
+                        lvM.Text = leMedicament.getDepot();
+                        lvM.SubItems.Add(leMedicament.getNom());
+                        lvM.SubItems.Add(leMedicament.getFamille());
+                        lvM.SubItems.Add(leMedicament.getComposition());
+                        lvM.SubItems.Add(leMedicament.getEffets());
+                        lvM.SubItems.Add(leMedicament.getContreIndication());
+                        lvM.SubItems.Add(leMedicament.getPrix().ToString());
+                        lv_medicaments.Items.Add(lvM);
+                    }
+
+                }
             }
         }
     }

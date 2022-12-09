@@ -30,6 +30,10 @@
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lv_etapes = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lv_med = new System.Windows.Forms.ListView();
             this.codeFamille = new System.Windows.Forms.ColumnHeader();
@@ -51,11 +55,38 @@
             // 
             // lv_etapes
             // 
+            this.lv_etapes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
             this.lv_etapes.Location = new System.Drawing.Point(15, 34);
             this.lv_etapes.Name = "lv_etapes";
             this.lv_etapes.Size = new System.Drawing.Size(334, 356);
             this.lv_etapes.TabIndex = 1;
             this.lv_etapes.UseCompatibleStateImageBehavior = false;
+            this.lv_etapes.View = System.Windows.Forms.View.Details;
+            this.lv_etapes.SelectedIndexChanged += new System.EventHandler(this.lv_etapes_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Dépôt";
+            this.columnHeader1.Width = 70;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Etape Num";
+            this.columnHeader2.Width = 80;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Décision";
+            this.columnHeader3.Width = 80;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Date";
+            this.columnHeader4.Width = 100;
             // 
             // groupBox1
             // 
@@ -124,5 +155,9 @@
         private ColumnHeader codeFamille;
         private ColumnHeader designation;
         private ColumnHeader nombreMedicaments;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
     }
 }
