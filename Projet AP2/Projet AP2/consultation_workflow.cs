@@ -28,7 +28,7 @@ namespace Projet_AP2
 
                 lv.Text = unWorkflow.getReference();
                 lv.SubItems.Add(unWorkflow.getEtape().ToString());
-                lv.SubItems.Add(unWorkflow.getDecision().ToString());
+                lv.SubItems.Add(unWorkflow.getEtapes().Last().Value.getNum().ToString()) ;
                 lv.SubItems.Add(unWorkflow.getDate().ToString());
 
                 lv_workflow.Items.Add(lv);
@@ -61,13 +61,12 @@ namespace Projet_AP2
                     lv.SubItems.Add(uneEtape.getLibelle().ToString());
                     lv.SubItems.Add(key.ToString());
                     Etape last = leWorkflow.getEtapes().Last().Value;
-
                     if(last != uneEtape)
                     {
                         lv.SubItems.Add("Validé");
                     } else
                     {
-                        if(leWorkflow.getDecision() == 1)
+                        if(leWorkflow.getDecision() == 2)
                         {
                             lv.SubItems.Add("Non validé");
                         } else

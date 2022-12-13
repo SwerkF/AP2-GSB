@@ -114,6 +114,7 @@
             this.consultationWorkflowToolStripMenuItem1.Name = "consultationWorkflowToolStripMenuItem1";
             this.consultationWorkflowToolStripMenuItem1.Size = new System.Drawing.Size(331, 22);
             this.consultationWorkflowToolStripMenuItem1.Text = "Consultation Workflow";
+            this.consultationWorkflowToolStripMenuItem1.Click += new System.EventHandler(this.consultationWorkflowToolStripMenuItem1_Click);
             // 
             // consultationNombreMédicamentParFamilleToolStripMenuItem
             // 
