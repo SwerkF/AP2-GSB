@@ -42,6 +42,17 @@ Lien explication de l'installation : [Visual Studio 2022](https://learn.microsof
 
 Lien explication de l'installation : [SQLServer](https://www.visual-expert.com/FR/visual-expert-documentation/install-and-configure-visual-expert/sql-server-2019-installation-guide.html)
 
+## Guide installation BDD 🔧
+- Se connecter à SQL server
+- Clic droit sur le dossier "DataBases" ou "Base de données"
+- cliquer sur "New DataBases" ou "Nouvelle Base de données"
+- la nommer "GSB_gesAMM"
+- Après avoir créer la nouvelle BDD
+- Cliquer sur "New Query" ou "Nouvelle Requête"
+- déplacer la BDD télécharger dans le dossier compressé dans la page qui vient de s'ouvir
+- Appuyer sur "Execute" ou "Executer" et attendre quelques secondes
+- la BDD est prête à l'emploi
+
 
 ## Auteurs 📝
 
