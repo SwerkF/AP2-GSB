@@ -26,7 +26,8 @@ namespace Projet_AP2
         {
 
         }
-
+        
+        //Page décision passage étape suivante
         private void décisionPassageÉtapeSuivanteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form3 child = new Form3();
@@ -34,6 +35,7 @@ namespace Projet_AP2
             child.Show();
         }
 
+        //Page ajout nouveau médicament
         private void ajoutNouveauMédicamentToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form4 child = new Form4();
@@ -41,6 +43,7 @@ namespace Projet_AP2
             child.Show();
         }
 
+        //Page consultation nombre médicament
         private void consultationNombreMédicamentParFamilleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form5 child = new Form5();
@@ -48,6 +51,7 @@ namespace Projet_AP2
             child.Show();
         }
 
+        //Page consultation médicament en cours de validation
         private void consultationMédicamentEnCoursDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form6 child = new Form6();

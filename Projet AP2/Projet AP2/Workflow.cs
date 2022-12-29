@@ -13,6 +13,8 @@ namespace Projet_AP2
         private int decision;
         private DateTime date;
         Dictionary<DateTime, Etape> lesEtapes;
+
+        //constructeur
         public Workflow(string reference, int etape, int decision, DateTime date)
         {
             this.reference = reference;

@@ -10,6 +10,8 @@ namespace Projet_AP2
     {
         private int num;
         private string libelle;
+        
+        //constructeur
         public Etape(int num, string libelle)
         {
             this.num = num;
@@ -29,6 +31,8 @@ namespace Projet_AP2
     {
         private string norme;
         private DateTime dateNorme;
+
+        //constructeur
         public Norme(int num, string libelle, string norme, DateTime dateNorme) : base(num, libelle)
         {
             this.norme = norme;

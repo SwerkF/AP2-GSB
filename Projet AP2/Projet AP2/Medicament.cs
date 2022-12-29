@@ -16,6 +16,7 @@ namespace Projet_AP2
         private string effets;
         private string contreIndication;
 
+        //constructeur
         public Medicament(string depot, string nom, string famille, string composition, string effets, string contreIndication)
         {
             this.depot = depot;

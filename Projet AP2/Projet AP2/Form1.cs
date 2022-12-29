@@ -14,6 +14,7 @@ namespace Projet_AP2
 
         private void btn_connecter_Click(object sender, EventArgs e)
         {
+            //action sur le bouton
             if(tb_user.Text == "a" && tb_mdp.Text == "a")
             {
                 new Form2().Show();
@@ -28,7 +29,7 @@ namespace Projet_AP2
         private void Form1_Load(object sender, EventArgs e)
         {
             tb_mdp.Text = "";
-            tb_mdp.PasswordChar = '*';
+            tb_mdp.PasswordChar = '*';      //cache le mot de passe
             tb_mdp.MaxLength = 14;
         }
     }

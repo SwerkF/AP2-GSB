@@ -18,6 +18,7 @@ namespace Projet_AP2
             InitializeComponent();
         }
 
+        //Remplie la liste des familles
         private void Form5_Load(object sender, EventArgs e)
         {
             db.listeFamille();
@@ -34,6 +35,7 @@ namespace Projet_AP2
             }
         }
 
+        //Remplie l'autre liste en fonction de la valeur sélectionnée dans la liste précédente
         private void lv_famille_SelectedIndexChanged(object sender, EventArgs e)
         {
             lv_medicaments.Items.Clear();

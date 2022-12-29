@@ -17,6 +17,7 @@ namespace Projet_AP2
             InitializeComponent();
         }
 
+        //Remplie la liste des médicaments
         private void Form6_Load(object sender, EventArgs e)
         {
             db.listeMedicament();
@@ -35,6 +36,7 @@ namespace Projet_AP2
             }
         }
 
+        //Remplie l'autre liste en fonction de la valeur sélectionnée dans la liste précédente
         private void lv_med_SelectedIndexChanged(object sender, EventArgs e)
         {
             lv_etapes.Items.Clear();

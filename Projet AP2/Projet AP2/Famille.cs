@@ -12,6 +12,7 @@ namespace Projet_AP2
         public string libelle;
         public int nbMed;
 
+        //constructeur
         public Famille(string codeFamille, string libelle, int nbMed)
         {
             this.codeFamille = codeFamille;

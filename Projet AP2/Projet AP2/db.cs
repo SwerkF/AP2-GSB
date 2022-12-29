@@ -10,6 +10,7 @@ namespace Projet_AP2
 {
     public static class db
     {
+        //Procédure insertion nouveau médicament
         public static Boolean getInsertMed(string dpt, string nom, string fam, string compo, string effets, string contreIndi)
         {
             SqlCommand maRequete = new SqlCommand("prc_getInsertMed", Globale.cnx);
@@ -47,6 +48,8 @@ namespace Projet_AP2
                 return false;
             }
         }
+
+        //Procédure liste client
         public static void listeClient()
         {
 
@@ -72,6 +75,8 @@ namespace Projet_AP2
                 Globale.LesMedicaments.Add(dpt, leMedicament);
             }
         }
+
+        //Procédure liste famille
         public static void listeFamille()
         {
             Globale.lesFamilles.Clear();
@@ -96,6 +101,7 @@ namespace Projet_AP2
             }
         }
 
+        //Procédure liste médicament
         public static void listeMedicament()
         {
             Globale.LesMedicaments.Clear();
@@ -123,6 +129,7 @@ namespace Projet_AP2
             }
         }
 
+        //Procédure liste workflow
         public static void fillWorkflow()
         {
             //objet SQLCommand pour définir la procédure stockée à utiliser
@@ -159,6 +166,7 @@ namespace Projet_AP2
             }
         }
 
+        //Procédure liste étape
         public static void fillEtapes()
         {
             //objet SQLCommand pour définir la procédure stockée à utiliser
