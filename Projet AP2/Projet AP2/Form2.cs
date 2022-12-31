@@ -36,5 +36,12 @@ namespace Projet_AP2
             form.MdiParent = this;
             form.Show();
         }
+
+        private void miseÀJourÉtapeNorméeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            maj_etp_norme form = new maj_etp_norme();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

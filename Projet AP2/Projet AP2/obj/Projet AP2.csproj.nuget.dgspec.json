@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\Projet AP2.csproj": {}
+    "N:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\Projet AP2.csproj": {}
   },
   "projects": {
-    "E:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\Projet AP2.csproj": {
+    "N:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\Projet AP2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\Projet AP2.csproj",
+        "projectUniqueName": "N:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\Projet AP2.csproj",
         "projectName": "Projet AP2",
-        "projectPath": "E:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\Projet AP2.csproj",
+        "projectPath": "N:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\Projet AP2.csproj",
         "packagesPath": "C:\\Users\\swerk\\.nuget\\packages\\",
-        "outputPath": "E:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\obj\\",
+        "outputPath": "N:\\C. AP\\AP2-GSB\\Projet AP2\\Projet AP2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

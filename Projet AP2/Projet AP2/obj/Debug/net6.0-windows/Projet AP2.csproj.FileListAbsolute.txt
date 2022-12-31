@@ -79,3 +79,4 @@ E:\C. AP\AP2-GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\runtimes\win-arm
 E:\C. AP\AP2-GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 E:\C. AP\AP2-GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 E:\C. AP\AP2-GSB\Projet AP2\Projet AP2\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\C. AP\AP2-GSB\Projet AP2\Projet AP2\obj\Debug\net6.0-windows\Projet_AP2.maj_etp_norme.resources

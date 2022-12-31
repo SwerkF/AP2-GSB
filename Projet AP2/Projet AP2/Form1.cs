@@ -27,6 +27,7 @@ namespace Projet_AP2
         {
             if(tb_user.Text == "a" && tb_mdp.Text == "a")
             {
+                Globale.user = tb_user.Text;
                 new Form2().Show();
                 new Form1().Close();
             }

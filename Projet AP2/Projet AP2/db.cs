@@ -131,7 +131,7 @@ namespace Projet_AP2
             // Ajouter les parameters à la procédure stockée
             SqlParameter paramIdDepot = new SqlParameter("@depot", System.Data.SqlDbType.NVarChar, 20);
             paramIdDepot.Value = depot;
-            Debug.WriteLine(paramIdDepot.Value);
+
             SqlParameter paramNumEtape = new SqlParameter("@etpNum", System.Data.SqlDbType.Int, 2);
             paramNumEtape.Value = numEtape;
 
@@ -153,6 +153,43 @@ namespace Projet_AP2
             {
                 maRequete.ExecuteNonQuery();
                 MessageBox.Show("Ca marche");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return false;
+            }
+        }
+
+        public static Boolean updateNorme(int etape, string user, DateTime date, string norme)
+        {
+            SqlCommand maRequete = new SqlCommand("prc_update_norme", Globale.cnx);
+            // Il s’agit d’une procédure stockée:
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+            // Ajouter les parameters à la procédure stockée
+            SqlParameter paramEtpNum = new SqlParameter("@etpNum", System.Data.SqlDbType.Int, 20);
+            paramEtpNum.Value = etape;
+
+            SqlParameter paramUser = new SqlParameter("@user", System.Data.SqlDbType.NVarChar, 40);
+            paramUser.Value = user;
+
+            SqlParameter paramDate = new SqlParameter("@date", System.Data.SqlDbType.DateTime, 30);
+            paramDate.Value = date;
+
+            SqlParameter paramNorme = new SqlParameter("@norme", System.Data.SqlDbType.NVarChar, 30);
+            paramNorme.Value = norme;
+
+            maRequete.Parameters.Add(paramEtpNum);
+            maRequete.Parameters.Add(paramUser);
+            maRequete.Parameters.Add(paramDate);
+            maRequete.Parameters.Add(paramNorme);
+
+
+            // exécuter la procedure stockée
+            try
+            {
+                maRequete.ExecuteNonQuery();
                 return true;
             }
             catch (Exception ex)

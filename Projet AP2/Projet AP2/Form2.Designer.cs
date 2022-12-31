@@ -83,6 +83,7 @@
             this.miseÀJourÉtapeNorméeToolStripMenuItem1.Name = "miseÀJourÉtapeNorméeToolStripMenuItem1";
             this.miseÀJourÉtapeNorméeToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
             this.miseÀJourÉtapeNorméeToolStripMenuItem1.Text = "Mise à jour étape normée";
+            this.miseÀJourÉtapeNorméeToolStripMenuItem1.Click += new System.EventHandler(this.miseÀJourÉtapeNorméeToolStripMenuItem1_Click);
             // 
             // ajoutNouveauMédicamentToolStripMenuItem
             // 
