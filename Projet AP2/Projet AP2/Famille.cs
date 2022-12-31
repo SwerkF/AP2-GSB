@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Projet_AP2
 {
+    //Class Famille
     internal class Famille
     {
+
+        //Variables
+
         private string code;
         private string libelle;
+
+
+        //Constructeur
 
         public Famille(string unCode, string unLibelle)
         {
@@ -17,6 +24,7 @@ namespace Projet_AP2
             this.libelle = unLibelle;
         }
 
+        //Getter
         public string getCode()
         {
             return this.code;

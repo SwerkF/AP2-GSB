@@ -19,15 +19,29 @@ namespace Projet_AP2
 
         private void consultationWorkflowToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            consultation_workflow form = new consultation_workflow();
-            form.MdiParent = this;
-            form.Show();
+            
             
         }
 
         private void décisionPassageÉtapeSuivanteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            changement_decision form = new changement_decision();
+            form.MdiParent = this;
+            form.Show();
+        }
 
+        private void consultationWorkflowToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            consultation_workflow form = new consultation_workflow();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void miseÀJourÉtapeNorméeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            maj_etp_norme form = new maj_etp_norme();
+            form.MdiParent = this;
+            form.Show();
         }
     }
 }

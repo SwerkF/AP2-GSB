@@ -10,5 +10,11 @@
     <Compile Update="consultation_workflow.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="changement_decision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="maj_etp_norme.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
