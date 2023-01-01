@@ -53,7 +53,11 @@ Lien explication de l'installation : [SQLServer](https://www.visual-expert.com/F
 - Appuyer sur "Execute" ou "Executer" et attendre quelques secondes
 - la BDD est prête à l'emploi
 
+## Guide création Trigger / Procédure stockée 
 
+Pour ajouter des procédures stockées, vous aurez besoin de Microsoft SQL Server Management Studio.
+
+Si vous possédez déjà le logiciel, rendez vous sur ce lien pour apprendre à rédiger des procédures stockées et triggers : [GUIDE CREATION TRIGGER/PROCEDURE](https://docs.google.com/document/d/1ELLMjNLmQSxK6Md6uXyJ_cbY4mLsq7_bVR2GfXbVBLI/edit?usp=sharing)
 ## Auteurs 📝
 
 - [@Swerk](https://www.github.com/SwerF) Oliwer SKWERES
