@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,9 +15,15 @@ namespace Projet_AP2
         private string composition;
         private string effets;
         private string contreIndication;
+<<<<<<< HEAD
         private float prix;
 
         public Medicament(string depot, string nom, string famille, string composition, string effets, string contreIndication, float prix)
+=======
+
+        //constructeur
+        public Medicament(string depot, string nom, string famille, string composition, string effets, string contreIndication)
+>>>>>>> featurethomas
         {
             this.depot = depot;
             this.nom = nom;
@@ -24,8 +31,13 @@ namespace Projet_AP2
             this.composition = composition;
             this.effets = effets;
             this.contreIndication = contreIndication;
+<<<<<<< HEAD
             this.prix = prix;
         }
+=======
+        }
+
+>>>>>>> featurethomas
         public string getDepot()
         {
             return this.depot;
@@ -50,9 +62,12 @@ namespace Projet_AP2
         {
             return this.contreIndication;
         }
+<<<<<<< HEAD
         public float getPrix()
         {
             return this.prix;
         }
+=======
+>>>>>>> featurethomas
     }
 }

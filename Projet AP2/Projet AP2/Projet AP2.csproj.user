@@ -7,6 +7,7 @@
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="consultation_workflow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,6 +15,15 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="maj_etp_norme.cs">
+=======
+    <Compile Update="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form6.cs">
+>>>>>>> featurethomas
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

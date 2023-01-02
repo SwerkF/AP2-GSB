@@ -12,8 +12,13 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\swerk\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\swerk\\.nuget\\packages",
+=======
+      "C:\\Users\\thoma\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\thoma\\.nuget\\packages",
+>>>>>>> featurethomas
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
