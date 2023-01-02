@@ -30,9 +30,7 @@ namespace Projet_AP2
         //Page décision passage étape suivante
         private void décisionPassageÉtapeSuivanteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 child = new Form3();
-            child.MdiParent = this;
-            child.Show();
+            
         }
 
         //Page ajout nouveau médicament
