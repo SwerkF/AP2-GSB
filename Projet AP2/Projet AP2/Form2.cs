@@ -23,25 +23,25 @@ namespace Projet_AP2
         //Page ajout nouveau médicament
         private void ajoutNouveauMédicamentToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form4 child = new Form4();
-            child.MdiParent = this;
-            child.Show();
+            Form4 form = new Form4();
+            form.MdiParent = this;
+            form.Show();
         }
 
         //Page consultation nombre médicament
         private void consultationNombreMédicamentParFamilleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form5 child = new Form5();
-            child.MdiParent = this;
-            child.Show();
+            Form5 form = new Form5();
+            form.MdiParent = this;
+            form.Show();
         }
 
         //Page consultation médicament en cours de validation
         private void consultationMédicamentEnCoursDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form6 child = new Form6();
-            child.MdiParent = this;
-            child.Show();
+            Form6 form = new Form6();
+            form.MdiParent = this;
+            form.Show();
         }
         private void décisionPassageÉtapeSuivanteToolStripMenuItem_Click(object sender, EventArgs e)
         {
