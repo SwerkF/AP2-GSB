@@ -138,7 +138,7 @@ namespace Projet_AP2
         //Accepter ou refuser une étape. Si elle est accepté, on mets 3, sinon on mets 2
         private void btn_valider_Click(object sender, EventArgs e)
         {
-            db.addEtapeWorkflow(workflowStr, etpNum, 3, DateTime.Parse(dtp_etape.Value.ToString())) ;
+            db.addEtapeWorkflow(workflowStr, etpNum, 1003, DateTime.Parse(dtp_etape.Value.ToString())) ;
             loadAll();
         }
 

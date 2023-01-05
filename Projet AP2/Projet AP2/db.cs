@@ -96,7 +96,7 @@ namespace Projet_AP2
 
 
             //objet SQLCommand pour définir la procédure stockée à utiliser
-            SqlCommand maRequete = new SqlCommand("prc_liste_medicamentNonAutorise", Globale.cnx);
+            SqlCommand maRequete = new SqlCommand("prc_liste_medicamentNonAutoriseT", Globale.cnx);
             maRequete.CommandType = System.Data.CommandType.StoredProcedure;
 
 
@@ -146,13 +146,11 @@ namespace Projet_AP2
             maRequete.Parameters.Add(paramNumDecision);
             maRequete.Parameters.Add(paramDate);
 
-            MessageBox.Show(depot + " ; " + numEtape.ToString() + " ; " + decision.ToString() + " ; " + date.ToString());
-
             // exécuter la procedure stockée
             try
             {
                 maRequete.ExecuteNonQuery();
-                MessageBox.Show("Ca marche");
+                MessageBox.Show("Requête exécutée.");
                 return true;
             }
             catch (Exception ex)

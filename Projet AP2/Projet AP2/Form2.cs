@@ -63,5 +63,26 @@ namespace Projet_AP2
             form.MdiParent = this;
             form.Show();
         }
+
+        private void ajoutNouveauMédicamentToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Form4 form = new Form4();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void consultationNombreMédicamentParFamilleToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form5 form = new Form5();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void consultationMédicamentEnCoursDeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form6 form = new Form6();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

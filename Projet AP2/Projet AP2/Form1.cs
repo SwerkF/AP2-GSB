@@ -15,8 +15,9 @@ namespace Projet_AP2
         private void btn_connecter_Click(object sender, EventArgs e)
         {
             //action sur le bouton
-            if(tb_user.Text == "a" && tb_mdp.Text == "a")
+            if(tb_user.Text == "Administrateur" && tb_mdp.Text == "Admin123")
             {
+                Globale.user = tb_user.Text;
                 new Form2().Show();
                 this.Hide();
             }
