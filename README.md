@@ -53,12 +53,24 @@ Lien explication de l'installation : [SQLServer](https://www.visual-expert.com/F
 - Appuyer sur "Execute" ou "Executer" et attendre quelques secondes
 - la BDD est prête à l'emploi
 
-## Guide création Trigger / Procédure stockée 
+## Guide création Trigger / Procédure stockée 📝
 
 Pour ajouter des procédures stockées, vous aurez besoin de Microsoft SQL Server Management Studio.
 
 Si vous possédez déjà le logiciel, rendez vous sur ce lien pour apprendre à rédiger des procédures stockées et triggers : [GUIDE CREATION TRIGGER/PROCEDURE](https://docs.google.com/document/d/1ELLMjNLmQSxK6Md6uXyJ_cbY4mLsq7_bVR2GfXbVBLI/edit?usp=sharing)
-## Auteurs 📝
+
+## Avant le lancement du projet ⌛
+Tout d'abord, vous devez faire un clic droit sur Form1.cs et selectionner "Afficher le code".
+
+Chercher cette ligne de code et remplacer "BTS2021-17" par le nom de votre Poste.
+```
+Globale.cnx.ConnectionString = "Data Source=BTS2021-17\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+```
+
+- IDENTIFIANT : Administrateur
+- MOT DE PASSE : Admin123
+
+## Auteurs ✏️
 
 - [@Swerk](https://www.github.com/SwerF) Oliwer SKWERES
 - [@thomasl28500](https://www.github.com/thomasl28500) Thomas LETELLIER
