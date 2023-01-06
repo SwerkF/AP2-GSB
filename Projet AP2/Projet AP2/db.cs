@@ -240,6 +240,7 @@ namespace Projet_AP2
         public static void listeClient()
         {
 
+            Globale.LesMedicaments.Clear();
             //objet SQLCommand pour définir la procédure stockée à utiliser
             SqlCommand maRequete = new SqlCommand("prc_liste_medicament", Globale.cnx);
             maRequete.CommandType = System.Data.CommandType.StoredProcedure;
